@@ -1,3 +1,3 @@
 # flaskresto
 
-this project is based on restaurant management system using python
+this project is based on restaurant management system using python.
