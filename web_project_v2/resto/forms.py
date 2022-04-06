@@ -101,22 +101,6 @@ class loginForm(FlaskForm):
     loginpassword = PasswordField('Password', validators=[
         DataRequired()])
     submit = SubmitField('LOGIN')
-    
-    
-'''
-    def validate_loginusername(form, field):
-        fetchedusers = user.query.filter_by(user_name=field.data).first()
-        if fetchedusers:
-            raise ValidationError('Invalid User Name')
-    def validate_loginpassword(form, field):
-        fetcheduser = user.query.filter_by(user_name=field.data).first()
-        fetchedpassword = user.query.filter_by(user_pass=field.data).first()
-        if field.data == fetcheduser.user_name:
-            if field.data != fetcheduser.user_pass:
-                raise ValidationError('Invalid Password')
-'''
-            
-
 
 class AddDishForm(FlaskForm):
     submit = SubmitField('Add')
